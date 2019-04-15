@@ -8,6 +8,7 @@
 
 #import "CallingViewController.h"
 #import "CallKit.h"
+#import <AVFoundation/AVFoundation.h>
 
 
 @interface CallingViewController ()
@@ -20,11 +21,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(sensorStateChangeNotification:) 
+                                                 name:UIDeviceProximityStateDidChangeNotification 
+                                               object:nil];
 }
 
+#pragma -mark event & response
 
 - (IBAction)btnHangUpClicked:(id)sender {
     [[CallKit shareCallKit] dismissCallViewController:self];
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:NO];
+}
+
+- (void)sensorStateChangeNotification:(NSNotification *)notification {
+    NSLog(@"sensorState:%d", [UIDevice currentDevice].proximityState);
+    
+    if ([UIDevice currentDevice].proximityState) {
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+    } else {
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    }
 }
 
 /*
