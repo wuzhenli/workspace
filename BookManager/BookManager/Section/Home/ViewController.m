@@ -10,8 +10,11 @@
 #import "ViewController.h"
 //#import <BookObtain/BookObtain.h>
 #import <BookObtain/BookObtain.h>
+#import <SellLib/SellLib.h>
+
 #import "CallingViewController.h"
 #import "CallKit.h"
+
 
 
 @interface ViewController ()
@@ -33,6 +36,8 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    self.lblTitle.text = [SellTool preSellBookName];
     
     CATransition *animation = [CATransition animation];
     [animation setDuration:0.25];

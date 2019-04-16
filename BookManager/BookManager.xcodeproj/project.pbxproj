@@ -19,6 +19,7 @@
 		0A209D0322645612005E7B8B /* CallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209D0122645612005E7B8B /* CallingViewController.m */; };
 		0A209D0422645612005E7B8B /* CallingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A209D0222645612005E7B8B /* CallingViewController.xib */; };
 		0A209D08226456B4005E7B8B /* CallKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209D07226456B4005E7B8B /* CallKit.m */; };
+		0A3C26FC2265AB6A00C23ABE /* SellLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C26FB2265AB6A00C23ABE /* SellLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		0A209D0222645612005E7B8B /* CallingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallingViewController.xib; sourceTree = "<group>"; };
 		0A209D06226456B4005E7B8B /* CallKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallKit.h; sourceTree = "<group>"; };
 		0A209D07226456B4005E7B8B /* CallKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallKit.m; sourceTree = "<group>"; };
+		0A3C26F92265AB3500C23ABE /* BookObtainBundle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BookObtainBundle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3C26FB2265AB6A00C23ABE /* SellLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SellLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3C26FC2265AB6A00C23ABE /* SellLib.framework in Frameworks */,
 				0A209CF822644DDF005E7B8B /* libBookObtain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +146,8 @@
 		0A209CF622644DDF005E7B8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A3C26FB2265AB6A00C23ABE /* SellLib.framework */,
+				0A3C26F92265AB3500C23ABE /* BookObtainBundle.framework */,
 				0A209CF722644DDF005E7B8B /* libBookObtain.a */,
 			);
 			name = Frameworks;
