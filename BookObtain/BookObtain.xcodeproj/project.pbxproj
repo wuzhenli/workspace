@@ -6,10 +6,36 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0A3C26CA2265A4BC00C23ABE /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0A3C26CB2265A4BC00C23ABE /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				0A3C26D02265A4DD00C23ABE /* ShellScript */,
+			);
+			dependencies = (
+				0A3C26CF2265A4D100C23ABE /* PBXTargetDependency */,
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0A209CEF22644BC9005E7B8B /* BookObtain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209CEE22644BC9005E7B8B /* BookObtain.m */; };
 		0A209CF022644BC9005E7B8B /* BookObtain.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A209CED22644BC9005E7B8B /* BookObtain.h */; };
+		0A3C26C122659D4100C23ABE /* BookObtainBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3C26B322659D4100C23ABE /* BookObtainBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A3C26CE2265A4D100C23ABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A209CE222644BC9005E7B8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A209CE922644BC9005E7B8B;
+			remoteInfo = BookObtain;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0A209CE822644BC9005E7B8B /* CopyFiles */ = {
@@ -28,10 +54,22 @@
 		0A209CEA22644BC9005E7B8B /* libBookObtain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBookObtain.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A209CED22644BC9005E7B8B /* BookObtain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookObtain.h; sourceTree = "<group>"; };
 		0A209CEE22644BC9005E7B8B /* BookObtain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookObtain.m; sourceTree = "<group>"; };
+		0A3C26B122659D4100C23ABE /* BookObtainBundle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BookObtainBundle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3C26B322659D4100C23ABE /* BookObtainBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookObtainBundle.h; sourceTree = "<group>"; };
+		0A3C26B422659D4100C23ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A3C26BE22659D4100C23ABE /* BookObtainBundleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookObtainBundleTests.m; sourceTree = "<group>"; };
+		0A3C26C022659D4100C23ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0A209CE722644BC9005E7B8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3C26AE22659D4100C23ABE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				0A209CEC22644BC9005E7B8B /* BookObtain */,
+				0A3C26B222659D4100C23ABE /* BookObtainBundle */,
+				0A3C26BD22659D4100C23ABE /* BookObtainBundleTests */,
 				0A209CEB22644BC9005E7B8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0A209CEA22644BC9005E7B8B /* libBookObtain.a */,
+				0A3C26B122659D4100C23ABE /* BookObtainBundle.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,7 +107,36 @@
 			path = BookObtain;
 			sourceTree = "<group>";
 		};
+		0A3C26B222659D4100C23ABE /* BookObtainBundle */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C26B322659D4100C23ABE /* BookObtainBundle.h */,
+				0A3C26B422659D4100C23ABE /* Info.plist */,
+			);
+			path = BookObtainBundle;
+			sourceTree = "<group>";
+		};
+		0A3C26BD22659D4100C23ABE /* BookObtainBundleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C26BE22659D4100C23ABE /* BookObtainBundleTests.m */,
+				0A3C26C022659D4100C23ABE /* Info.plist */,
+			);
+			path = BookObtainBundleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A3C26AC22659D4100C23ABE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3C26C122659D4100C23ABE /* BookObtainBundle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0A209CE922644BC9005E7B8B /* BookObtain */ = {
@@ -86,6 +156,24 @@
 			productReference = 0A209CEA22644BC9005E7B8B /* libBookObtain.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		0A3C26B022659D4100C23ABE /* BookObtainBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3C26C622659D4100C23ABE /* Build configuration list for PBXNativeTarget "BookObtainBundle" */;
+			buildPhases = (
+				0A3C26AC22659D4100C23ABE /* Headers */,
+				0A3C26AD22659D4100C23ABE /* Sources */,
+				0A3C26AE22659D4100C23ABE /* Frameworks */,
+				0A3C26AF22659D4100C23ABE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookObtainBundle;
+			productName = BookObtainBundle;
+			productReference = 0A3C26B122659D4100C23ABE /* BookObtainBundle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +184,12 @@
 				ORGANIZATIONNAME = JL;
 				TargetAttributes = {
 					0A209CE922644BC9005E7B8B = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					0A3C26B022659D4100C23ABE = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					0A3C26CA2265A4BC00C23ABE = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -113,9 +207,41 @@
 			projectRoot = "";
 			targets = (
 				0A209CE922644BC9005E7B8B /* BookObtain */,
+				0A3C26B022659D4100C23ABE /* BookObtainBundle */,
+				0A3C26CA2265A4BC00C23ABE /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A3C26AF22659D4100C23ABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3C26D02265A4DD00C23ABE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#要build的target名\ntarget_Name=${PROJECT_NAME}\nif [[ $1 ]]\nthen\ntarget_Name=$1\nfi\n\nUNIVERSAL_OUTPUT_FOLDER=\"${SRCROOT}/${PROJECT_NAME}_Products\"\n\n# 创建输出目录，并删除之前的文件\nrm -rf \"${UNIVERSAL_OUTPUT_FOLDER}\"\nmkdir -p \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n# 分别编译真机和模拟器版本\nxcodebuild -target \"${target_Name}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${target_Name}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n#复制头文件到目标文件夹\nHEADER_FOLDER=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/include/${target_Name}\"\nif [[ -d \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/usr/local/include\" ]]\nthen\nHEADER_FOLDER=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/usr/local/include\"\nfi\ncp -R \"${HEADER_FOLDER}\" \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n#合成模拟器和真机.a包\nlipo -create \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${target_Name}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${target_Name}.a\" -output \"${UNIVERSAL_OUTPUT_FOLDER}/lib${target_Name}.a\"\n\n# 判断build文件夹是否存在，存在则删除\nif [ -d \"${SRCROOT}/build\" ]\nthen\nrm -rf \"${SRCROOT}/build\"\nfi\n\n#打开目标文件夹\nopen \"${UNIVERSAL_OUTPUT_FOLDER}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A209CE622644BC9005E7B8B /* Sources */ = {
@@ -126,7 +252,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A3C26AD22659D4100C23ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A3C26CF2265A4D100C23ABE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A209CE922644BC9005E7B8B /* BookObtain */;
+			targetProxy = 0A3C26CE2265A4D100C23ABE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0A209CF122644BC9005E7B8B /* Debug */ = {
@@ -180,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -233,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -265,6 +406,84 @@
 			};
 			name = Release;
 		};
+		0A3C26C222659D4100C23ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = BookObtainBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.6rooms.www.BookObtainBundle;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A3C26C322659D4100C23ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = BookObtainBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.6rooms.www.BookObtainBundle;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A3C26CC2265A4BC00C23ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A3C26CD2265A4BC00C23ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -282,6 +501,24 @@
 			buildConfigurations = (
 				0A209CF422644BC9005E7B8B /* Debug */,
 				0A209CF522644BC9005E7B8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3C26C622659D4100C23ABE /* Build configuration list for PBXNativeTarget "BookObtainBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3C26C222659D4100C23ABE /* Debug */,
+				0A3C26C322659D4100C23ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3C26CB2265A4BC00C23ABE /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3C26CC2265A4BC00C23ABE /* Debug */,
+				0A3C26CD2265A4BC00C23ABE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -215,6 +215,7 @@
 				0A209CA822644B46005E7B8B /* Sources */,
 				0A209CA922644B46005E7B8B /* Frameworks */,
 				0A209CAA22644B46005E7B8B /* Resources */,
+				0A3C26C92265A00F00C23ABE /* BookObtain Resources */,
 			);
 			buildRules = (
 			);
@@ -330,6 +331,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3C26C92265A00F00C23ABE /* BookObtain Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "BookObtain Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A209CA822644B46005E7B8B /* Sources */ = {
