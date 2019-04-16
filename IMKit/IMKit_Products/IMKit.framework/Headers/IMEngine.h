@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)engineName ;
 
++ (UIImage *)engineShengYouImage ;
+
 @end
 
 NS_ASSUME_NONNULL_END

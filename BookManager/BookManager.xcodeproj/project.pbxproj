@@ -23,6 +23,7 @@
 		0A3C277F2265C41200C23ABE /* libBookObtain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C277E2265C41200C23ABE /* libBookObtain.a */; };
 		0A3C27FE2265CA9000C23ABE /* IMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C27FD2265CA9000C23ABE /* IMKit.framework */; };
 		0A3C28212265D51000C23ABE /* IMKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C28202265D51000C23ABE /* IMKitBundle.bundle */; };
+		0A3C28232265D9B200C23ABE /* IMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C28222265D9B100C23ABE /* IMKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		0A3C277E2265C41200C23ABE /* libBookObtain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBookObtain.a; sourceTree = "<group>"; };
 		0A3C27FD2265CA9000C23ABE /* IMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3C28202265D51000C23ABE /* IMKitBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IMKitBundle.bundle; sourceTree = "<group>"; };
+		0A3C28222265D9B100C23ABE /* IMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3C27FE2265CA9000C23ABE /* IMKit.framework in Frameworks */,
+				0A3C28232265D9B200C23ABE /* IMKit.framework in Frameworks */,
 				0A3C27792265C38800C23ABE /* SellLib.framework in Frameworks */,
 				0A3C277F2265C41200C23ABE /* libBookObtain.a in Frameworks */,
 			);
@@ -239,6 +242,7 @@
 		0A3C27242265BECA00C23ABE /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				0A3C28222265D9B100C23ABE /* IMKit.framework */,
 				0A3C28202265D51000C23ABE /* IMKitBundle.bundle */,
 				0A3C277C2265C41200C23ABE /* BookObtain */,
 				0A3C277E2265C41200C23ABE /* libBookObtain.a */,

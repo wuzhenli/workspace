@@ -4,8 +4,9 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 # SDK
-BBS/Classes/Vendors/txyun/libSV/
-BBS/Classes/Vendors/AliVoice/
+BookManager/BookManager/Framework
+BookObtain/BookObtain_Products/*.a
+IMKit/IMKit_Products
 
 ## Build generated
 build/
