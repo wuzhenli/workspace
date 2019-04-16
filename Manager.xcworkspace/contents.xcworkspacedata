@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:IMKit/IMKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SellLib/SellLib.xcodeproj">
    </FileRef>
    <FileRef

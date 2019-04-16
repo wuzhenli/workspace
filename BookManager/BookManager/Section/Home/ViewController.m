@@ -11,7 +11,7 @@
 //#import <BookObtain/BookObtain.h>
 #import <BookObtain/BookObtain.h>
 #import <SellLib/SellLib.h>
-
+#import <IMKit/IMKit.h>
 
 #import "CallingViewController.h"
 #import "CallKit.h"
@@ -35,6 +35,8 @@
     self.lblTitle.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
     self.imgView.image = [SellTool sellBookImage];
+    
+    NSLog(@"-----:%@", [IMEngine engineName]);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

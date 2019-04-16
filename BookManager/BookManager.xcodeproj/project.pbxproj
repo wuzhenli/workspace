@@ -21,6 +21,7 @@
 		0A3C27792265C38800C23ABE /* SellLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C27782265C38800C23ABE /* SellLib.framework */; };
 		0A3C277B2265C3DE00C23ABE /* BookImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C277A2265C3DE00C23ABE /* BookImage.bundle */; };
 		0A3C277F2265C41200C23ABE /* libBookObtain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C277E2265C41200C23ABE /* libBookObtain.a */; };
+		0A3C27FE2265CA9000C23ABE /* IMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C27FD2265CA9000C23ABE /* IMKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		0A3C277A2265C3DE00C23ABE /* BookImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BookImage.bundle; sourceTree = "<group>"; };
 		0A3C277D2265C41200C23ABE /* BookObtain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookObtain.h; sourceTree = "<group>"; };
 		0A3C277E2265C41200C23ABE /* libBookObtain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBookObtain.a; sourceTree = "<group>"; };
+		0A3C27FD2265CA9000C23ABE /* IMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3C27FE2265CA9000C23ABE /* IMKit.framework in Frameworks */,
 				0A3C27792265C38800C23ABE /* SellLib.framework in Frameworks */,
 				0A3C277F2265C41200C23ABE /* libBookObtain.a in Frameworks */,
 			);
@@ -165,6 +168,7 @@
 		0A209CF622644DDF005E7B8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A3C27FD2265CA9000C23ABE /* IMKit.framework */,
 				0A3C26FB2265AB6A00C23ABE /* SellLib.framework */,
 				0A3C26F92265AB3500C23ABE /* BookObtainBundle.framework */,
 				0A209CF722644DDF005E7B8B /* libBookObtain.a */,
