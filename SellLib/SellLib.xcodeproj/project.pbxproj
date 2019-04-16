@@ -6,6 +6,21 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0A3C26FD2265AD2700C23ABE /* SellArchitecture */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0A3C26FE2265AD2700C23ABE /* Build configuration list for PBXAggregateTarget "SellArchitecture" */;
+			buildPhases = (
+				0A3C27032265AD5100C23ABE /* Com Architecture */,
+			);
+			dependencies = (
+				0A3C27022265AD4800C23ABE /* PBXTargetDependency */,
+			);
+			name = SellArchitecture;
+			productName = ComArchitecture;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0A3C26E52265AAA100C23ABE /* SellLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C26DB2265AAA100C23ABE /* SellLib.framework */; };
 		0A3C26EA2265AAA100C23ABE /* SellLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C26E92265AAA100C23ABE /* SellLibTests.m */; };
@@ -16,6 +31,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		0A3C26E62265AAA100C23ABE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A3C26D22265AAA100C23ABE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A3C26DA2265AAA100C23ABE;
+			remoteInfo = SellLib;
+		};
+		0A3C27012265AD4800C23ABE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A3C26D22265AAA100C23ABE /* Project object */;
 			proxyType = 1;
@@ -158,6 +180,9 @@
 					0A3C26E32265AAA100C23ABE = {
 						CreatedOnToolsVersion = 10.2;
 					};
+					0A3C26FD2265AD2700C23ABE = {
+						CreatedOnToolsVersion = 10.2;
+					};
 				};
 			};
 			buildConfigurationList = 0A3C26D52265AAA100C23ABE /* Build configuration list for PBXProject "SellLib" */;
@@ -174,6 +199,7 @@
 			targets = (
 				0A3C26DA2265AAA100C23ABE /* SellLib */,
 				0A3C26E32265AAA100C23ABE /* SellLibTests */,
+				0A3C26FD2265AD2700C23ABE /* SellArchitecture */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +220,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3C27032265AD5100C23ABE /* Com Architecture */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Com Architecture";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/sh\n#要build的target名\nTARGET_NAME=${PROJECT_NAME}\nif [[ $1 ]]\nthen\nTARGET_NAME=$1\nfi\nUNIVERSAL_OUTPUT_FOLDER=\"${SRCROOT}/${PROJECT_NAME}_Products/\"\n\n#创建输出目录，并删除之前的framework文件\nmkdir -p \"${UNIVERSAL_OUTPUT_FOLDER}\"\nrm -rf \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework\"\n\n#分别编译模拟器和真机的Framework\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${TARGET_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n#拷贝framework到univer目录\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework\" \"${UNIVERSAL_OUTPUT_FOLDER}\"\n\n#合并framework，输出最终的framework到build目录\nlipo -create -output \"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}\"\n\n#删除编译之后生成的无关的配置文件\ndir_path=\"${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/\"\nfor file in ls $dir_path\ndo\nif [[ ${file} =~ \".xcconfig\" ]]\nthen\nrm -f \"${dir_path}/${file}\"\nfi\ndone\n\n#判断build文件夹是否存在，存在则删除\nif [ -d \"${SRCROOT}/build\" ]\nthen\nrm -rf \"${SRCROOT}/build\"\nfi\n\nrm -rf \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n\n#打开合并后的文件夹\nopen \"${UNIVERSAL_OUTPUT_FOLDER}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A3C26D72265AAA100C23ABE /* Sources */ = {
@@ -219,6 +266,11 @@
 			isa = PBXTargetDependency;
 			target = 0A3C26DA2265AAA100C23ABE /* SellLib */;
 			targetProxy = 0A3C26E62265AAA100C23ABE /* PBXContainerItemProxy */;
+		};
+		0A3C27022265AD4800C23ABE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A3C26DA2265AAA100C23ABE /* SellLib */;
+			targetProxy = 0A3C27012265AD4800C23ABE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -275,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -331,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -425,6 +477,24 @@
 			};
 			name = Release;
 		};
+		0A3C26FF2265AD2700C23ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A3C27002265AD2700C23ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,6 +521,15 @@
 			buildConfigurations = (
 				0A3C26F32265AAA100C23ABE /* Debug */,
 				0A3C26F42265AAA100C23ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3C26FE2265AD2700C23ABE /* Build configuration list for PBXAggregateTarget "SellArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3C26FF2265AD2700C23ABE /* Debug */,
+				0A3C27002265AD2700C23ABE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
