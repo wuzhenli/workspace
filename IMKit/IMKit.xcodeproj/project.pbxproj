@@ -27,6 +27,14 @@
 		0A3C27F02265C94500C23ABE /* IMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3C27E22265C94400C23ABE /* IMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3C27FB2265C9F100C23ABE /* IMEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3C27F92265C9F100C23ABE /* IMEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3C27FC2265C9F100C23ABE /* IMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C27FA2265C9F100C23ABE /* IMEngine.m */; };
+		0A3C28162265D2CD00C23ABE /* 设置@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C28102265D2CD00C23ABE /* 设置@3x.png */; };
+		0A3C28172265D2CD00C23ABE /* 声优聊天区icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C28112265D2CD00C23ABE /* 声优聊天区icon@3x.png */; };
+		0A3C28182265D2CD00C23ABE /* 声优聊天区icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C28122265D2CD00C23ABE /* 声优聊天区icon@2x.png */; };
+		0A3C28192265D2CD00C23ABE /* 入场@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C28132265D2CD00C23ABE /* 入场@2x.png */; };
+		0A3C281A2265D2CD00C23ABE /* 设置@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C28142265D2CD00C23ABE /* 设置@2x.png */; };
+		0A3C281B2265D2CD00C23ABE /* 入场@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C28152265D2CD00C23ABE /* 入场@3x.png */; };
+		0A3C281E2265D30C00C23ABE /* UIImage+im.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3C281C2265D30C00C23ABE /* UIImage+im.h */; };
+		0A3C281F2265D30C00C23ABE /* UIImage+im.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C281D2265D30C00C23ABE /* UIImage+im.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,16 @@
 		0A3C27EF2265C94500C23ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3C27F92265C9F100C23ABE /* IMEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMEngine.h; sourceTree = "<group>"; };
 		0A3C27FA2265C9F100C23ABE /* IMEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMEngine.m; sourceTree = "<group>"; };
+		0A3C280A2265D27E00C23ABE /* IMKitBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMKitBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3C280C2265D27E00C23ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A3C28102265D2CD00C23ABE /* 设置@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置@3x.png"; sourceTree = "<group>"; };
+		0A3C28112265D2CD00C23ABE /* 声优聊天区icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "声优聊天区icon@3x.png"; sourceTree = "<group>"; };
+		0A3C28122265D2CD00C23ABE /* 声优聊天区icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "声优聊天区icon@2x.png"; sourceTree = "<group>"; };
+		0A3C28132265D2CD00C23ABE /* 入场@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "入场@2x.png"; sourceTree = "<group>"; };
+		0A3C28142265D2CD00C23ABE /* 设置@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置@2x.png"; sourceTree = "<group>"; };
+		0A3C28152265D2CD00C23ABE /* 入场@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "入场@3x.png"; sourceTree = "<group>"; };
+		0A3C281C2265D30C00C23ABE /* UIImage+im.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+im.h"; sourceTree = "<group>"; };
+		0A3C281D2265D30C00C23ABE /* UIImage+im.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+im.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +91,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A3C28072265D27E00C23ABE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +106,7 @@
 			children = (
 				0A3C27E12265C94400C23ABE /* IMKit */,
 				0A3C27EC2265C94400C23ABE /* IMKitTests */,
+				0A3C280B2265D27E00C23ABE /* IMKitBundle */,
 				0A3C27E02265C94400C23ABE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +116,7 @@
 			children = (
 				0A3C27DF2265C94400C23ABE /* IMKit.framework */,
 				0A3C27E82265C94400C23ABE /* IMKitTests.xctest */,
+				0A3C280A2265D27E00C23ABE /* IMKitBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +127,8 @@
 				0A3C27E22265C94400C23ABE /* IMKit.h */,
 				0A3C27F92265C9F100C23ABE /* IMEngine.h */,
 				0A3C27FA2265C9F100C23ABE /* IMEngine.m */,
+				0A3C281C2265D30C00C23ABE /* UIImage+im.h */,
+				0A3C281D2265D30C00C23ABE /* UIImage+im.m */,
 				0A3C27E32265C94400C23ABE /* Info.plist */,
 			);
 			path = IMKit;
@@ -114,6 +143,20 @@
 			path = IMKitTests;
 			sourceTree = "<group>";
 		};
+		0A3C280B2265D27E00C23ABE /* IMKitBundle */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C28132265D2CD00C23ABE /* 入场@2x.png */,
+				0A3C28152265D2CD00C23ABE /* 入场@3x.png */,
+				0A3C28142265D2CD00C23ABE /* 设置@2x.png */,
+				0A3C28102265D2CD00C23ABE /* 设置@3x.png */,
+				0A3C28122265D2CD00C23ABE /* 声优聊天区icon@2x.png */,
+				0A3C28112265D2CD00C23ABE /* 声优聊天区icon@3x.png */,
+				0A3C280C2265D27E00C23ABE /* Info.plist */,
+			);
+			path = IMKitBundle;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -123,6 +166,7 @@
 			files = (
 				0A3C27FB2265C9F100C23ABE /* IMEngine.h in Headers */,
 				0A3C27F02265C94500C23ABE /* IMKit.h in Headers */,
+				0A3C281E2265D30C00C23ABE /* UIImage+im.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +209,23 @@
 			productReference = 0A3C27E82265C94400C23ABE /* IMKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0A3C28092265D27E00C23ABE /* IMKitBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3C280D2265D27E00C23ABE /* Build configuration list for PBXNativeTarget "IMKitBundle" */;
+			buildPhases = (
+				0A3C28062265D27E00C23ABE /* Sources */,
+				0A3C28072265D27E00C23ABE /* Frameworks */,
+				0A3C28082265D27E00C23ABE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IMKitBundle;
+			productName = IMKitBundle;
+			productReference = 0A3C280A2265D27E00C23ABE /* IMKitBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +242,9 @@
 						CreatedOnToolsVersion = 10.2;
 					};
 					0A3C27FF2265CF8B00C23ABE = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					0A3C28092265D27E00C23ABE = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -200,6 +264,7 @@
 				0A3C27DE2265C94400C23ABE /* IMKit */,
 				0A3C27E72265C94400C23ABE /* IMKitTests */,
 				0A3C27FF2265CF8B00C23ABE /* IMKitBuild */,
+				0A3C28092265D27E00C23ABE /* IMKitBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -216,6 +281,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3C28082265D27E00C23ABE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A3C281B2265D2CD00C23ABE /* 入场@3x.png in Resources */,
+				0A3C281A2265D2CD00C23ABE /* 设置@2x.png in Resources */,
+				0A3C28172265D2CD00C23ABE /* 声优聊天区icon@3x.png in Resources */,
+				0A3C28192265D2CD00C23ABE /* 入场@2x.png in Resources */,
+				0A3C28182265D2CD00C23ABE /* 声优聊天区icon@2x.png in Resources */,
+				0A3C28162265D2CD00C23ABE /* 设置@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3C27FC2265C9F100C23ABE /* IMEngine.m in Sources */,
+				0A3C281F2265D30C00C23ABE /* UIImage+im.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3C27EE2265C94500C23ABE /* IMKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A3C28062265D27E00C23ABE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +488,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = IMKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,6 +514,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = IMKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -481,6 +569,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 294Q8452TK;
+				ENABLE_BITCODE = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -490,7 +579,48 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 294Q8452TK;
+				ENABLE_BITCODE = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A3C280E2265D27E00C23ABE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = IMKitBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.6rooms.www.IMKitBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0A3C280F2265D27E00C23ABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = 294Q8452TK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = IMKitBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.6rooms.www.IMKitBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -529,6 +659,15 @@
 			buildConfigurations = (
 				0A3C28012265CF8B00C23ABE /* Debug */,
 				0A3C28022265CF8B00C23ABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A3C280D2265D27E00C23ABE /* Build configuration list for PBXNativeTarget "IMKitBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A3C280E2265D27E00C23ABE /* Debug */,
+				0A3C280F2265D27E00C23ABE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

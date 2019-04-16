@@ -1,5 +1,5 @@
 //
-//  IMEngine.h
+//  UIImage+im.h
 //  IMKit
 //
 //  Created by li’Pro on 2019/4/16.
@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IMEngine : NSObject
+@interface UIImage (im)
 
-+ (NSString *)engineName ;
-
-+ (UIImage *)engineShengYouImage ;
++ (UIImage *)im_imageWithName:(NSString *)name ;
 
 @end
 

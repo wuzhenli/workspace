@@ -35,6 +35,9 @@
     self.lblTitle.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
     self.imgView.image = [SellTool sellBookImage];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.imgView.image = [IMEngine engineShengYouImage];
+    });
     
     NSLog(@"-----:%@", [IMEngine engineName]);
 }

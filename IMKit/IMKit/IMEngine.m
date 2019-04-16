@@ -7,11 +7,17 @@
 //
 
 #import "IMEngine.h"
+#import "UIImage+im.h"
 
 @implementation IMEngine
 
 + (NSString *)engineName {
     return @"IMEngine name";
+}
+
++ (UIImage *)engineShengYouImage {
+    UIImage *img = [UIImage im_imageWithName:@"声优聊天区icon"];
+    return img;
 }
 
 @end
