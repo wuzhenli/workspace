@@ -1,0 +1,6 @@
+framework module SellLib {
+  umbrella header "SellLib.h"
+
+  export *
+  module * { export * }
+}

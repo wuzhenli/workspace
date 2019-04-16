@@ -12,6 +12,7 @@
 #import <BookObtain/BookObtain.h>
 #import <SellLib/SellLib.h>
 
+
 #import "CallingViewController.h"
 #import "CallKit.h"
 
@@ -20,6 +21,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
 @end
 
@@ -32,7 +34,7 @@
     self.lblTitle.text = [BookObtain getBookName];
     self.lblTitle.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
-    self.view.layer;
+    self.imgView.image = [SellTool sellBookImage];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

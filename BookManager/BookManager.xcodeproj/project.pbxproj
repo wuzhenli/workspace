@@ -15,11 +15,12 @@
 		0A209CBF22644B48005E7B8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209CBE22644B48005E7B8B /* main.m */; };
 		0A209CC922644B48005E7B8B /* BookManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209CC822644B48005E7B8B /* BookManagerTests.m */; };
 		0A209CD422644B48005E7B8B /* BookManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209CD322644B48005E7B8B /* BookManagerUITests.m */; };
-		0A209CF822644DDF005E7B8B /* libBookObtain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A209CF722644DDF005E7B8B /* libBookObtain.a */; };
 		0A209D0322645612005E7B8B /* CallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209D0122645612005E7B8B /* CallingViewController.m */; };
 		0A209D0422645612005E7B8B /* CallingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A209D0222645612005E7B8B /* CallingViewController.xib */; };
 		0A209D08226456B4005E7B8B /* CallKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A209D07226456B4005E7B8B /* CallKit.m */; };
-		0A3C26FC2265AB6A00C23ABE /* SellLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C26FB2265AB6A00C23ABE /* SellLib.framework */; };
+		0A3C27792265C38800C23ABE /* SellLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C27782265C38800C23ABE /* SellLib.framework */; };
+		0A3C277B2265C3DE00C23ABE /* BookImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C277A2265C3DE00C23ABE /* BookImage.bundle */; };
+		0A3C277F2265C41200C23ABE /* libBookObtain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C277E2265C41200C23ABE /* libBookObtain.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,19 @@
 			remoteInfo = BookManager;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A3C27332265C0C900C23ABE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A209CAC22644B46005E7B8B /* BookManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +78,10 @@
 		0A209D07226456B4005E7B8B /* CallKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallKit.m; sourceTree = "<group>"; };
 		0A3C26F92265AB3500C23ABE /* BookObtainBundle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BookObtainBundle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3C26FB2265AB6A00C23ABE /* SellLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SellLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3C27782265C38800C23ABE /* SellLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SellLib.framework; sourceTree = "<group>"; };
+		0A3C277A2265C3DE00C23ABE /* BookImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BookImage.bundle; sourceTree = "<group>"; };
+		0A3C277D2265C41200C23ABE /* BookObtain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookObtain.h; sourceTree = "<group>"; };
+		0A3C277E2265C41200C23ABE /* libBookObtain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBookObtain.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3C26FC2265AB6A00C23ABE /* SellLib.framework in Frameworks */,
-				0A209CF822644DDF005E7B8B /* libBookObtain.a in Frameworks */,
+				0A3C27792265C38800C23ABE /* SellLib.framework in Frameworks */,
+				0A3C277F2265C41200C23ABE /* libBookObtain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +135,7 @@
 		0A209CAE22644B46005E7B8B /* BookManager */ = {
 			isa = PBXGroup;
 			children = (
+				0A3C27242265BECA00C23ABE /* Framework */,
 				0A209D05226456A8005E7B8B /* Tool */,
 				0A209CFB226455B1005E7B8B /* AppDelegate */,
 				0A209CFC226455BA005E7B8B /* Section */,
@@ -211,6 +230,25 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		0A3C27242265BECA00C23ABE /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C277C2265C41200C23ABE /* BookObtain */,
+				0A3C277E2265C41200C23ABE /* libBookObtain.a */,
+				0A3C277A2265C3DE00C23ABE /* BookImage.bundle */,
+				0A3C27782265C38800C23ABE /* SellLib.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		0A3C277C2265C41200C23ABE /* BookObtain */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C277D2265C41200C23ABE /* BookObtain.h */,
+			);
+			path = BookObtain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +260,7 @@
 				0A209CA922644B46005E7B8B /* Frameworks */,
 				0A209CAA22644B46005E7B8B /* Resources */,
 				0A3C26C92265A00F00C23ABE /* BookObtain Resources */,
+				0A3C27332265C0C900C23ABE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,6 +358,7 @@
 				0A209CB922644B48005E7B8B /* Assets.xcassets in Resources */,
 				0A209CB722644B46005E7B8B /* Main.storyboard in Resources */,
 				0A209D0422645612005E7B8B /* CallingViewController.xib in Resources */,
+				0A3C277B2265C3DE00C23ABE /* BookImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,12 +582,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 294Q8452TK;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/BookManager/Framework";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../BookObtain";
 				INFOPLIST_FILE = BookManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BookManager/Framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.6rooms.www.BookManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -561,12 +605,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 294Q8452TK;
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/BookManager/Framework";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../BookObtain";
 				INFOPLIST_FILE = BookManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BookManager/Framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.6rooms.www.BookManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
