@@ -35,7 +35,8 @@
 		0A3C271B2265B1DF00C23ABE /* six_live_ruf_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C27132265B1DE00C23ABE /* six_live_ruf_scale.png */; };
 		0A3C271C2265B1DF00C23ABE /* upload_width_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C27142265B1DE00C23ABE /* upload_width_image.jpeg */; };
 		0A3C271D2265B1DF00C23ABE /* long_image_ruf_scale.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C27152265B1DE00C23ABE /* long_image_ruf_scale.jpeg */; };
-		0A3C27212265BB5D00C23ABE /* BookImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A3C27082265B0F500C23ABE /* BookImage.bundle */; };
+		0A3C27822265C48A00C23ABE /* UIImage+sell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3C27802265C48A00C23ABE /* UIImage+sell.h */; };
+		0A3C27832265C48A00C23ABE /* UIImage+sell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C27812265C48A00C23ABE /* UIImage+sell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		0A3C27132265B1DE00C23ABE /* six_live_ruf_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = six_live_ruf_scale.png; sourceTree = "<group>"; };
 		0A3C27142265B1DE00C23ABE /* upload_width_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upload_width_image.jpeg; sourceTree = "<group>"; };
 		0A3C27152265B1DE00C23ABE /* long_image_ruf_scale.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = long_image_ruf_scale.jpeg; sourceTree = "<group>"; };
+		0A3C27802265C48A00C23ABE /* UIImage+sell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+sell.h"; sourceTree = "<group>"; };
+		0A3C27812265C48A00C23ABE /* UIImage+sell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+sell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				0A3C26DF2265AAA100C23ABE /* Info.plist */,
 				0A3C26F52265AAC700C23ABE /* SellTool.h */,
 				0A3C26F62265AAC700C23ABE /* SellTool.m */,
+				0A3C27802265C48A00C23ABE /* UIImage+sell.h */,
+				0A3C27812265C48A00C23ABE /* UIImage+sell.m */,
 			);
 			path = SellLib;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3C26F72265AAC700C23ABE /* SellTool.h in Headers */,
+				0A3C27822265C48A00C23ABE /* UIImage+sell.h in Headers */,
 				0A3C26EC2265AAA100C23ABE /* SellLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3C27212265BB5D00C23ABE /* BookImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3C26F82265AAC700C23ABE /* SellTool.m in Sources */,
+				0A3C27832265C48A00C23ABE /* UIImage+sell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
