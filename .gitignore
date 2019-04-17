@@ -5,7 +5,9 @@
 
 # SDK
 BookManager/BookManager/Framework
+
 BookObtain/BookObtain_Products/*.a
+SellLib/SellLib_Products
 IMKit/IMKit_Products
 
 ## Build generated
