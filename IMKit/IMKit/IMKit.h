@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char IMKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <IMKit/PublicHeader.h>
 
 #import "IMEngine.h"
+#import "IMChatView.h"

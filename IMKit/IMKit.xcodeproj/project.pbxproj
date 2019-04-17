@@ -22,6 +22,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0A308AAC2266C5CF00435076 /* IMChatView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A308AAA2266C5CF00435076 /* IMChatView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A308AAD2266C5CF00435076 /* IMChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A308AAB2266C5CF00435076 /* IMChatView.m */; };
+		0A308AB02266C8EE00435076 /* IMChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A308AAE2266C5D800435076 /* IMChatView.xib */; };
+		0A308AB42266CA7C00435076 /* NSBundle+im.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A308AB22266CA7C00435076 /* NSBundle+im.h */; };
+		0A308AB52266CA7C00435076 /* NSBundle+im.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A308AB32266CA7C00435076 /* NSBundle+im.m */; };
 		0A3C27E92265C94400C23ABE /* IMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3C27DF2265C94400C23ABE /* IMKit.framework */; };
 		0A3C27EE2265C94500C23ABE /* IMKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C27ED2265C94500C23ABE /* IMKitTests.m */; };
 		0A3C27F02265C94500C23ABE /* IMKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3C27E22265C94400C23ABE /* IMKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -55,6 +60,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A308AAA2266C5CF00435076 /* IMChatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMChatView.h; sourceTree = "<group>"; };
+		0A308AAB2266C5CF00435076 /* IMChatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMChatView.m; sourceTree = "<group>"; };
+		0A308AAE2266C5D800435076 /* IMChatView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IMChatView.xib; sourceTree = "<group>"; };
+		0A308AB22266CA7C00435076 /* NSBundle+im.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+im.h"; sourceTree = "<group>"; };
+		0A308AB32266CA7C00435076 /* NSBundle+im.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+im.m"; sourceTree = "<group>"; };
 		0A3C27DF2265C94400C23ABE /* IMKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IMKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3C27E22265C94400C23ABE /* IMKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMKit.h; sourceTree = "<group>"; };
 		0A3C27E32265C94400C23ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +111,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A308AB12266CA6C00435076 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C281C2265D30C00C23ABE /* UIImage+im.h */,
+				0A3C281D2265D30C00C23ABE /* UIImage+im.m */,
+				0A308AB22266CA7C00435076 /* NSBundle+im.h */,
+				0A308AB32266CA7C00435076 /* NSBundle+im.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		0A3C27D52265C94400C23ABE = {
 			isa = PBXGroup;
 			children = (
@@ -124,11 +145,13 @@
 		0A3C27E12265C94400C23ABE /* IMKit */ = {
 			isa = PBXGroup;
 			children = (
+				0A308AB12266CA6C00435076 /* Category */,
 				0A3C27E22265C94400C23ABE /* IMKit.h */,
 				0A3C27F92265C9F100C23ABE /* IMEngine.h */,
 				0A3C27FA2265C9F100C23ABE /* IMEngine.m */,
-				0A3C281C2265D30C00C23ABE /* UIImage+im.h */,
-				0A3C281D2265D30C00C23ABE /* UIImage+im.m */,
+				0A308AAA2266C5CF00435076 /* IMChatView.h */,
+				0A308AAB2266C5CF00435076 /* IMChatView.m */,
+				0A308AAE2266C5D800435076 /* IMChatView.xib */,
 				0A3C27E32265C94400C23ABE /* Info.plist */,
 			);
 			path = IMKit;
@@ -164,8 +187,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A308AB42266CA7C00435076 /* NSBundle+im.h in Headers */,
 				0A3C27FB2265C9F100C23ABE /* IMEngine.h in Headers */,
 				0A3C27F02265C94500C23ABE /* IMKit.h in Headers */,
+				0A308AAC2266C5CF00435076 /* IMChatView.h in Headers */,
 				0A3C281E2265D30C00C23ABE /* UIImage+im.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A308AB02266C8EE00435076 /* IMChatView.xib in Resources */,
 				0A3C281B2265D2CD00C23ABE /* 入场@3x.png in Resources */,
 				0A3C281A2265D2CD00C23ABE /* 设置@2x.png in Resources */,
 				0A3C28172265D2CD00C23ABE /* 声优聊天区icon@3x.png in Resources */,
@@ -324,6 +350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A308AB52266CA7C00435076 /* NSBundle+im.m in Sources */,
+				0A308AAD2266C5CF00435076 /* IMChatView.m in Sources */,
 				0A3C27FC2265C9F100C23ABE /* IMEngine.m in Sources */,
 				0A3C281F2265D30C00C23ABE /* UIImage+im.m in Sources */,
 			);

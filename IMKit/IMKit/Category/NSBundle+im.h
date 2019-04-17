@@ -1,8 +1,8 @@
 //
-//  IMEngine.h
+//  NSBundle+im.h
 //  IMKit
 //
-//  Created by li’Pro on 2019/4/16.
+//  Created by li’Pro on 2019/4/17.
 //  Copyright © 2019 JL. All rights reserved.
 //
 
@@ -10,11 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IMEngine : NSObject
+@interface NSBundle (im)
 
-+ (NSString *)engineName ;
-
-+ (UIImage *)engineShengYouImage ;
++ (UIView *)im_viewWithNibName:(NSString *)nibName ;
 
 @end
 

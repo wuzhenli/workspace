@@ -40,6 +40,10 @@
     });
     
     NSLog(@"-----:%@", [IMEngine engineName]);
+    
+    IMChatView *chatView = [IMEngine getChatView];
+    chatView.frame = CGRectMake(10, 300, 200, 50);
+    [self.view addSubview:chatView];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

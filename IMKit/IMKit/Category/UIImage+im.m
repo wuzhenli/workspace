@@ -13,7 +13,6 @@
 
 + (UIImage *)im_imageWithName:(NSString *)name {
     NSString *pathStr = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"IMKitBundle.bundle"];
-    
     NSString *imgFilePath = [pathStr stringByAppendingPathComponent: name.pathExtension.length ? name : [NSString stringWithFormat:@"%@.png", name]];
     return [UIImage imageWithContentsOfFile:imgFilePath];
 }

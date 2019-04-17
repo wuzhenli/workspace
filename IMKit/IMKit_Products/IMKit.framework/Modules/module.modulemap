@@ -1,6 +1,0 @@
-framework module IMKit {
-  umbrella header "IMKit.h"
-
-  export *
-  module * { export * }
-}

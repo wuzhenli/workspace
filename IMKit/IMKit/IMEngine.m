@@ -8,6 +8,8 @@
 
 #import "IMEngine.h"
 #import "UIImage+im.h"
+#import "IMChatView.h"
+#import "NSBundle+im.h"
 
 @implementation IMEngine
 
@@ -18,6 +20,10 @@
 + (UIImage *)engineShengYouImage {
     UIImage *img = [UIImage im_imageWithName:@"声优聊天区icon"];
     return img;
+}
+
++ (IMChatView *)getChatView {
+    return (IMChatView *)[NSBundle im_viewWithNibName:@"IMChatView"];
 }
 
 @end

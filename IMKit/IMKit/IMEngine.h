@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class IMChatView;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)engineName ;
 
 + (UIImage *)engineShengYouImage ;
++ (IMChatView *)getChatView ;
 
 @end
 
