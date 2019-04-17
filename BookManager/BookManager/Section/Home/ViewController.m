@@ -22,6 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
+@property (strong, nonatomic) UIButton *btnAdd;
 
 @end
 
@@ -44,11 +45,15 @@
     IMChatView *chatView = [IMEngine getChatView];
     chatView.frame = CGRectMake(10, 300, 200, 50);
     [self.view addSubview:chatView];
+    
+    [self.view addSubview:self.btnAdd];
+    self.btnAdd.frame = CGRectMake(10, 400, 100, 100);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    self.lblTitle.text = [SellTool preSellBookName];
+    
+    self.lblTitle.text = @"1112222 title";
     
     CATransition *animation = [CATransition animation];
     [animation setDuration:0.25];
@@ -75,6 +80,22 @@
     animation.additive;
 }
 
+- (void)btnAddClicked {
+    self.lblTitle.text = @"btnAddCLicked1111";
+}
+- (void)injected {
+    NSLog(@"%s", __func__);
+}
 
+
+#pragma -mark getter
+
+- (UIButton *)btnAdd {
+    if (!_btnAdd) {
+        _btnAdd = [UIButton buttonWithType:UIButtonTypeContactAdd];
+        [_btnAdd addTarget:self action:@selector(btnAddClicked) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _btnAdd;
+}
 
 @end
